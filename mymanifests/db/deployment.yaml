@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: yelb-db
-        image: mreferre/yelb-db:0.6
+        image: konare1ka/yelb-db:latest
         securityContext:
           allowPrivilegeEscalation: false
           readOnlyRootFilesystem: true

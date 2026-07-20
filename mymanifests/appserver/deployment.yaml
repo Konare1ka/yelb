@@ -22,7 +22,7 @@ spec:
       # There isn't runAsNonRoot since all containers are started under root
       containers:
       - name: yelb-appserver
-        image: mreferre/yelb-appserver:0.7
+        image: konare1ka/yelb-appserver:latest
         ports:
         - containerPort: 4567
         resources:
