@@ -1,4 +1,12 @@
 
+#### Completed Work
+
+My completed work is located in the following directories:
+
+* **`mymanifests/`** — contains improved Kubernetes manifests compared to the original versions provided by the author. These manifests have been refined to improve structure, readability, and maintainability.
+* **`.github/workflows/`** — contains a configured **CI pipeline** implemented with **GitHub Actions**, which automates the validation and deployment workflow.
+
+
 #### Why Yelb 
 
 When experimenting with new technologies you often follow tutorials that let you deploy purpose-built simple demo application. With Yelb I wanted to make this experience the other way around: start with an existing application and adapt it to the various technologies, services and platforms you are learning. I found this to be way more fun and useful. 
