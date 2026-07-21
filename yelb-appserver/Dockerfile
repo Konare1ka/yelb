@@ -1,4 +1,4 @@
-FROM bitnami/ruby:2.7.4
+FROM ruby:2.7:slim
 MAINTAINER massimo@it20.info
 
 ################## BEGIN INSTALLATION ######################
@@ -14,6 +14,7 @@ ENV LANG=en_us.UTF-8
 ENV LC_ALL=C.UTF-8
 ENV RACK_ENV=production
 
+RUN apt-get update && apt-get install -y build-essential #the Bitnami repository has become paid, and the official Ruby may be missing this feature
 RUN gem install sinatra --no-document
 RUN gem install redis --no-document
 ### hack to allow the setup of the pg gem (which would fail otherwise)
