@@ -21,9 +21,9 @@ RUN gem install redis -v '4.8.1' --no-document
 RUN apt-get update
 RUN apt-get install libpq-dev -y
 ### end of hack (this would require additional research and optimization)
-RUN gem install pg --no-document
+RUN gem install pg -v '1.6.3' --no-document
 ### this installs the AWS SDK for DynamoDB (so that appserver can talk to DDB Vs the default Postgres/Redis)
-RUN gem install aws-sdk-dynamodb pg --no-document
+RUN gem install aws-sdk-dynamodb --no-document
 # Set the working directory to /
 WORKDIR /
 ADD startup.sh startup.sh
