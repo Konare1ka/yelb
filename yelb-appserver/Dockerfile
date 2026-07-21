@@ -1,4 +1,4 @@
-FROM ruby:2.7:slim
+FROM ruby:2.7-slim
 MAINTAINER massimo@it20.info
 
 ################## BEGIN INSTALLATION ######################
