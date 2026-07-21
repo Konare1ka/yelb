@@ -16,7 +16,7 @@ ENV RACK_ENV=production
 
 RUN apt-get update && apt-get install -y build-essential #the Bitnami repository has become paid, and the official Ruby may be missing this feature
 RUN gem install sinatra --no-document
-RUN gem install redis --no-document
+RUN gem install redis -v '4.8.1' --no-document
 ### hack to allow the setup of the pg gem (which would fail otherwise)
 RUN apt-get update
 RUN apt-get install libpq-dev -y
