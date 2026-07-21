@@ -1,10 +1,15 @@
 
 #### Completed Work
 
-My completed work is located in the following directories:
+My completed work is organized in the following directories:
 
-* **`mymanifests/`** — contains improved Kubernetes manifests compared to the original versions provided by the author. These manifests have been refined to improve structure, readability, and maintainability.
-* **`.github/workflows/`** — contains a configured **CI pipeline** implemented with **GitHub Actions**, which automates the validation and deployment workflow.
+* **`manifests/`** — contains Kubernetes manifests created and improved by me. The original manifests were taken from the repository of **mreferre** and further refined to improve structure, readability, maintainability, and deployment configuration.
+
+* **`deploy.sh`** — contains a Bash-based **deployment automation script** that simplifies the process of setting up the environment. The script is responsible for preparing the Kubernetes cluster, deploying the application components, and installing the monitoring stack.
+
+* **`.github/workflows/`** — contains the configured **CI pipeline** implemented with **GitHub Actions**. The pipeline automates the build and validation workflow, ensuring that changes are checked and processed consistently.
+
+The project setup is designed to provide a reproducible deployment process with automated application deployment, monitoring integration, and continuous integration capabilities.
 
 
 #### Why Yelb 
