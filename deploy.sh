@@ -57,7 +57,7 @@ else
 fi
 
 echo "Change directory to mymanifests"
-cd mymanifests
+cd manifests
 
 echo -n "Attempting to create namespaces... "
 if ! kubectl apply -f namespaces.yaml>/dev/null; then
