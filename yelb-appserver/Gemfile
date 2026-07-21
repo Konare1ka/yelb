@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
-gem 'pg'
-gem 'redis'
+gem "sinatra"
+gem "rackup"
+gem "puma"
+gem "redis", "4.8.1"
+gem "pg", "1.5.9"
+gem "aws-sdk-dynamodb"

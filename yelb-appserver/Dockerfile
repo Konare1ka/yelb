@@ -17,12 +17,9 @@ ENV RACK_ENV=production
 RUN apt-get update && \
     apt-get install -y build-essential curl libpq-dev && \
     rm -rf /var/lib/apt/lists/*
-RUN gem install sinatra --no-document
-RUN gem install redis -v '4.8.1' --no-document
-### end of hack (this would require additional research and optimization)
-RUN gem install pg -v '1.5.9' --no-document
-### this installs the AWS SDK for DynamoDB (so that appserver can talk to DDB Vs the default Postgres/Redis)
-RUN gem install aws-sdk-dynamodb --no-document
+
+RUN bundle install
+
 # Set the working directory to /
 WORKDIR /
 ADD startup.sh startup.sh
