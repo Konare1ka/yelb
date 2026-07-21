@@ -1,7 +1,13 @@
 name: Build&Push
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+    paths:
+      - 'yelb-appserver/**'
+      - 'yelb-db/**'
+      - 'yelb-ui/**'
+      - '.github/workflows/build.yaml'
 jobs:
   build:
     runs-on: ubuntu-latest
