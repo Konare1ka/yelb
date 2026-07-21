@@ -23,3 +23,4 @@ jobs:
           context: ./${{ matrix.service }}
           push: true
           tags: konare1ka/${{ matrix.service }}:${{ github.sha }}
+          tags: konare1ka/${{ matrix.service }}:latest
