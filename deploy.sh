@@ -68,7 +68,7 @@ else
 fi
 
 echo -n "Attempting to apply manifests... "
-for cmd in appserver db redis ui; do
+for cmd in appserver db redis ui reverse-proxy; do
 	if ! kubectl apply -f $cmd/ -R>/dev/null; then
 		echo "FAILED"
 		exit 1
